@@ -10,21 +10,8 @@ header('Content-Type: application/json');
 
 require_once('UserDB.php');
 
-$json_data = json_decode('{"idx": "1"}');
+$json_data = json_decode('{"a":1,"b":2,"c":3,"d":4,"e": true}');
 var_dump($json_data);
-
-class Address {
-    public $street = "";
-    public $city = "";
-    public $state = "";
-
-    function __construct($street, $city, $state)
-    {
-        $this->state = $street;
-        $this->city = $city;
-        $this->state = $state;
-    }
-}
-
-
 ?>
+
+
